@@ -56,7 +56,7 @@ function clickHandler() {
 
     if (text.length > 11) {
         let index1 = text.indexOf("@");
-        let index2 = text.indexOf(".");
+        let index2 = text.lastIndexOf(".");
 
         if (index2 == -1) {
             setError("Please write a valid input");
@@ -89,3 +89,4 @@ function setError(message) {
     verifyElement.style.color = "red";
     console.log(message);
 }
+//
